@@ -96,17 +96,95 @@ public class FootballPlayer {
             System.out.println("You are a Veteran, old man!!");
 
         // Task 6
+        System.out.println("Enter a jersey number:");
         int jerseyNumCoach = user_input.nextInt();
+        switch (jerseyNumCoach) {
+            case 1:
+                System.out.println("Player Position - Goalkeeper");
+                break;
+
+            case 2:
+                System.out.println("Player Position - Defender");
+                break;
+
+            case 6:
+                System.out.println("Player Position - Midfielder");
+                break;
+
+            case 11:
+                System.out.println("Player Position - Winger");
+
+            case 7:
+                System.out.println("Player Position - Winger");
+                break;
+
+            case 9:
+                System.out.println("Player Position - Striker");
+                break;
+
+            case 10:
+                System.out.println("Player Position - Playmaker");
+
+            default:
+                System.out.println("Player position not known");
+
+        }
 
 
 
 
+        // Task 7
+        System.out.println("Enter a jersey number:");
+        int jerseyNumCoach1 = user_input.nextInt();
+        switch (jerseyNumCoach1) {
+            case 1:
+                System.out.println("Player Position - Goalkeeper");
+                break;
+
+            case 5:
+            case 2:
+                System.out.println("Player Position - Defender");
+                break;
+
+            case 6:
+                System.out.println("Player Position - Midfielder");
+                break;
+
+            case 11:
+            case 7:
+                System.out.println("Player Position - Winger");
+                break;
+
+            case 9:
+                System.out.println("Player Position - Striker");
+                break;
+
+            case 10:
+                System.out.println("Player Position - Playmaker");
+                break;
+
+            default:
+                System.out.println("Player position not known");
+
+        }
+
+        // Task 8
+        if (age < 20){
+            if (weightKG_int < 80) {
+                System.out.println("Starting Line Up");
+            }
+            else {
+                System.out.println("BENCH");
+            }
+        }
+        else {
+            System.out.println("BENCH");
+        }
 
 
-
-
-
-
+        // Task 9
+        String finalStatus = (eligible) ? "Play" : "Rest";
+        System.out.println("Final Status: " + finalStatus);
 
 
 
